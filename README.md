@@ -7,7 +7,7 @@ samba连接总是失败，搜索到可以使用lpd://{ip}/{printername}的方法
 ## 设置方法
 
 1. windows电脑：
-    
+   
   - 主机名：`win-01702201552`
   - ~~共享打印机名称：`HP LaserJet Professional P1106`~~
   
@@ -49,10 +49,10 @@ https://www.openprinting.org/download/printdriver/auxfiles/HP/plugins/
    - ~~使用了`lpd://win-01702201552/HP%20LaserJet%20Professional%20P1106`~~
    - 使用lpd://win-01702201552/P1106
 - 修改hosts文件
-   
+  
    ```shell
    192.168.200.13 win-01702201552
-```
+   ```
    
    - 写此脚本加入crontab ，动态hosts
 
@@ -75,4 +75,3 @@ cat /proc/net/arp
 # Mask: *
 # Device: enp2s0
 ```
-
